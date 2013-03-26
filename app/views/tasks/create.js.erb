@@ -1,0 +1,6 @@
+//What happens when a new task is created.
+
+$('#new_task').remove(); //remove()
+$('#new_link').fadeIn(); //.show()
+$('#incomplete_tasks').append('<%= j render(@task) %>');
+$('#edit_task_<%= @task.id %>').submitOnCheck();
